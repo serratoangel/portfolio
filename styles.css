@@ -1,0 +1,140 @@
+/* Variables */
+
+:root {
+    --color-rich-black: #080708;
+    --color-light-sea-green: #00A9A5;
+    --color-teal-blue: #4E8098;
+    --color-pale-cerulean: #90C2E7;
+    --color-ghost-white: #F4F4F9;
+    --font-kreon: 'Kreon', serif;
+    --font-passero: 'Passero One', cursive;
+}
+
+/* Reset */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-rich-black);
+}
+
+.navbar-container {
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--color-ghost-white);
+    text-align: center;
+    padding: 14px 1em;
+    text-decoration: none;
+    font-family: var(--font-kreon);
+    font-size: 1.25em;
+    transition: 0.5s;
+}
+
+li a:hover:not(.active) {
+    color: var(--color-rich-black);
+    background-color: var(--color-ghost-white);
+}
+
+span {
+    display: block;
+    font-family: var(--font-passero);
+    white-space: nowrap;
+    border-right: 1px solid;
+    width: 16ch;
+
+    animation: typing 2s steps(16),
+        blink .5s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+h1 {
+    font-size: 3em;
+    font-family: var(--font-passero);
+    color: var(--color-rich-black);
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: var(--font-kreon);
+    font-weight: normal;
+    line-height: 1.5em;
+    color: var(--color-rich-black);
+}
+
+p::selection,
+h1::selection {
+    background-color: var(--color-rich-black);
+    color: var(--color-ghost-white);
+}
+
+.active {
+    background-color: var(--color-teal-blue);
+    color: var(--color-ghost-white)
+}
+
+.big {
+    height: 1500px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.image-bc {
+    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    filter: opacity(95%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    transition: 1s;
+}
+
+.image-bc:hover {
+    filter: none;
+}
+
+.image-bc2 {
+    background-image: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    filter: opacity(95%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    min-height: 500px;
+    transition: 1s;
+}
+
+.image-bc2:hover {
+    filter: none;
+}
