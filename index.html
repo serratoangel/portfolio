@@ -5,35 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS start -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Fonts -->
+    <!-- JS start -->
+    <script type="text/javascript" src="script.js" defer></script>
+    <!-- Fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&family=Passero+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Mulish&family=Overlock&display=swap"
         rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
+
     <div class="image-bc"></div>
 
-    <div class="navbar-container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#" class="active navbar-item">Home</a></li>
-                <li><a href="#" class="navbar-item">Contact</a></li>
-                <li><a href="#" class="navbar-item">About</a></li>
+    <div class="main-nav">
+        <nav>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#home" class="active main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#about" class="main-nav__link">About</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#portfolio" class="main-nav__link">Portfolio</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#skills" class="main-nav__link">Skills</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#contact" class="main-nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     </div>
 
-    <div class="big">
+    <span>hola</span>
+
+    <div id="home" class="home">
         <h1>Angel Serrato</h1>
-        <span>Front-end Developer</span>
-        <p>Hi! My name is Angel Serrato. I'm from Colombia. I'm self taught Front-end Developer, who is looking for new opportunities in order to get the job of my dreams. Thank you for stopping by and I'd love to hear about you soon.</p>
+        <p>Hi! My name is Angel Serrato. I'm from Colombia. I'm self taught Front-end Developer, who is looking for new
+            opportunities in order to get the job of my dreams. Thank you for stopping by and I'd love to hear about you
+            soon.</p>
+    </div>
+
+    <div id="about" class="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit obcaecati voluptatem debitis sed
+            dolorum, enim aperiam, nihil nisi culpa nobis incidunt voluptatibus tempora vitae, repudiandae beatae esse
+            earum at animi?</p>
+    </div>
+
+    <div id="portfolio" class="portfolio">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit obcaecati voluptatem debitis sed
+            dolorum, enim aperiam, nihil nisi culpa nobis incidunt voluptatibus tempora vitae, repudiandae beatae esse
+            earum at animi?</p>
+    </div>
+
+    <div id="skills" class="skills">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit obcaecati voluptatem debitis sed
+            dolorum, enim aperiam, nihil nisi culpa nobis incidunt voluptatibus tempora vitae, repudiandae beatae esse
+            earum at animi?</p>
+    </div>
+
+    <div id="contact" class="contact">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit obcaecati voluptatem debitis sed
+            dolorum, enim aperiam, nihil nisi culpa nobis incidunt voluptatibus tempora vitae, repudiandae beatae esse
+            earum at animi?</p>
     </div>
 
     <div class="image-bc2"></div>
+
+    <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
 </body>
 
 </html>
