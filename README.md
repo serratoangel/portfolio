@@ -7,7 +7,7 @@
 <div align="center">
   <h3>
     <span> | </span>
-    <a href="https://portfolio-serratoangel.vercel.app/" target="blank">
+    <a href="https://portfolio-serratoangel.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -24,7 +24,6 @@
 ## Overview
 
 ![screenshot](https://user-images.githubusercontent.com/92894663/178087249-d27b6f17-89b2-42d1-8552-e931e37b0bff.jpg)
-
 
 After taking and watching so many courses and videos on the Internet, I decided to create my portfolio's webpage in order to practice and improve my skills in the web development universe.
 

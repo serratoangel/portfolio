@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS start -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- JS start -->
+    <!-- Preload font file just bacuse-->
+    <link rel="preload" href="./fonts/cabin-v26-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/mulish-v11-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/overlock-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- JS start The web browser loads the javascript first, the page will load 2x faster -->
     <script type="text/javascript" src="script.js" defer></script>
+    <!-- CSS start -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/imported.css">
     <!-- Fonts start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Mulish&family=Overlock&display=swap"
-        rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
 
-    <div class="image-bc"></div>
+    <div class="intro-bc"></div>
 
     <div class="main-nav">
         <nav>
@@ -44,10 +45,10 @@
     </div>
 
     <div id="home" class="home">
-        <h1>Coming soon!</h1>
+        <h1>Coming Soon!</h1>
     </div>
 
-    <div class="image-bc2"></div>
+    <div class="bottom-bc"></div>
 
     <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
 
