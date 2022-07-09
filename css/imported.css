@@ -4,7 +4,15 @@ CSS Styles - Angel's Portfolio
 */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    li a {
+        display: flex;
+        flex-direction: column;
+        padding: 14px 0.3em;
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
