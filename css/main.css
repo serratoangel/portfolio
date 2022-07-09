@@ -1,5 +1,6 @@
 /*
 CSS Styles - Angel's Portfolio
+0 Fuentes
 1 Variables
 2 Reset
 3 Home
@@ -10,6 +11,128 @@ CSS Styles - Angel's Portfolio
 8 Background Top
 9 Background Bottom
 */
+
+/* Fuentes */
+
+/* cabin-regular - latin */
+@font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/cabin-v26-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/cabin-v26-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cabin-700 - latin */
+@font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/cabin-v26-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/cabin-v26-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cabin-italic - latin */
+@font-face {
+    font-family: 'Cabin';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/cabin-v26-latin-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/cabin-v26-latin-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cabin-700italic - latin */
+@font-face {
+    font-family: 'Cabin';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/cabin-v26-latin-700italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/cabin-v26-latin-700italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* overlock-regular - latin */
+@font-face {
+    font-family: 'Overlock';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/overlock-v15-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/overlock-v15-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* overlock-700 - latin */
+@font-face {
+    font-family: 'Overlock';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/overlock-v15-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/overlock-v15-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* overlock-900 - latin */
+@font-face {
+    font-family: 'Overlock';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/overlock-v15-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/overlock-v15-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* mulish-regular - latin */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/mulish-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/mulish-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* mulish-700 - latin */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/mulish-v11-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/mulish-v11-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* mulish-900 - latin */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/mulish-v11-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/mulish-v11-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /* Variables */
 
@@ -42,9 +165,6 @@ body {
 .skills,
 .contact {
     height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px solid var(--color-rich-black);
 }
 
 /* Home */
@@ -113,7 +233,33 @@ body {
     }
 }
 
-/* END? */
+/* Background Top */
+
+.image-bc {
+    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    filter: opacity(95%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    transition: 1s;
+}
+
+/* Background Bottom */
+
+.image-bc2 {
+    background-image: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    filter: opacity(95%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    min-height: 500px;
+    transition: 1s;
+}
+
+/*---------------------------------------------------------------------------------*/
 
 ul {
     list-style-type: none;
@@ -155,14 +301,15 @@ h1 {
     font-family: var(--font-cabin-title);
     color: var(--color-rich-black);
     font-weight: 600;
+    margin: 0;
 }
 
 p {
     font-size: 1.5em;
     font-family: var(--font-overlock-text);
     font-weight: normal;
-    line-height: 1.5em;
     color: var(--color-rich-black);
+    margin: 0;
 }
 
 p::selection,
@@ -174,30 +321,4 @@ h1::selection {
 .active {
     background-color: var(--color-teal-blue);
     color: var(--color-ghost-white)
-}
-
-/* Background Top */
-
-.image-bc {
-    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    filter: opacity(95%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-    transition: 1s;
-}
-
-/* Background Bottom */
-
-.image-bc2 {
-    background-image: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    filter: opacity(95%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-    min-height: 500px;
-    transition: 1s;
 }
