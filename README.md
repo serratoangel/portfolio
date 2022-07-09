@@ -7,7 +7,7 @@
 <div align="center">
   <h3>
     <span> | </span>
-    <a href="https://portfolio-serratoangel.vercel.app/">
+    <a href="https://portfolio-serratoangel.vercel.app/" target="blank">
       Demo
     </a>
     <span> | </span>
