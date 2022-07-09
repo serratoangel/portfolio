@@ -142,9 +142,6 @@ CSS Styles - Angel's Portfolio
     --color-teal-blue: #4E8098;
     --color-pale-cerulean: #90C2E7;
     --color-ghost-white: #F4F4F9;
-    --font-cabin-title: 'Cabin', sans-serif;
-    --font-mulish-subtitle: 'Mulish', sans-serif;
-    --font-overlock-text: 'Overlock', cursive;
 }
 
 /* Reset */
@@ -213,7 +210,8 @@ body {
     cursor: pointer;
     padding: 15px;
     border-radius: 14px;
-    font-family: var(--font-overlock-text);
+    font-family: 'Overlock';
+    font-weight: 700;
     animation-name: button-animation;
     animation-duration: 1s;
     transition: 1s;
@@ -286,7 +284,8 @@ li a {
     text-align: center;
     padding: 14px 1em;
     text-decoration: none;
-    font-family: var(--font-mulish-subtitle);
+    font-family: 'Mulish';
+    font-weight: 700;
     font-size: 1.25em;
     transition: 0.5s;
 }
@@ -298,19 +297,21 @@ li a:hover:not(.active) {
 
 h1 {
     font-size: 3em;
-    font-family: var(--font-cabin-title);
+    font-family: 'Cabin';
+    font-weight: 700;
     color: var(--color-rich-black);
-    font-weight: 600;
     margin: 0;
 }
 
 p {
     font-size: 1.5em;
-    font-family: var(--font-overlock-text);
-    font-weight: normal;
+    font-family: 'Overlock';
+    font-weight: 400;
     color: var(--color-rich-black);
     margin: 0;
 }
+
+/* Highlighted text color selector */
 
 p::selection,
 h1::selection {
