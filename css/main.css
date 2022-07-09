@@ -167,7 +167,10 @@ body {
 /* Home */
 
 .home {
-    background-color: var(--color-pale-cerulean);
+    background-color: var(--color-rich-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* About */
@@ -233,28 +236,39 @@ body {
 
 /* Background Top */
 
-.image-bc {
-    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    filter: opacity(95%);
+.intro-bc {
+    background-image: url(../images/intro-bg.jpg);
+    filter: grayscale(95%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    min-height: 500px;
-    transition: 1s;
+    min-height: 100vh;
 }
 
 /* Background Bottom */
 
-.image-bc2 {
-    background-image: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    filter: opacity(95%);
+.bottom-bc {
+    background-image: url(../images/bottom-bg.jpg);
+    filter: grayscale(95%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
     background-size: cover;
-    min-height: 500px;
-    transition: 1s;
+    min-height: 100vh;
+}
+
+/* Highlighted text color selector */
+
+p::selection,
+h1::selection {
+    background-color: var(--color-rich-black);
+    color: var(--color-ghost-white);
+}
+
+.active {
+    background-color: var(--color-teal-blue);
+    color: var(--color-ghost-white)
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -299,7 +313,8 @@ h1 {
     font-size: 3em;
     font-family: 'Cabin';
     font-weight: 700;
-    color: var(--color-rich-black);
+    color: var(--color-ghost-white);
+    text-align: center;
     margin: 0;
 }
 
@@ -309,17 +324,4 @@ p {
     font-weight: 400;
     color: var(--color-rich-black);
     margin: 0;
-}
-
-/* Highlighted text color selector */
-
-p::selection,
-h1::selection {
-    background-color: var(--color-rich-black);
-    color: var(--color-ghost-white);
-}
-
-.active {
-    background-color: var(--color-teal-blue);
-    color: var(--color-ghost-white)
 }
